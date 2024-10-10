@@ -4,12 +4,21 @@ class MyComponent extends React.Component {
 
     state = {
         name: 'minhchien',
-        address: 'baria'
+        address: 'baria',
+        age: 19
     };
 
-    handleClick(event) {
-        // console.log("muhaha")
+    handleClick = (event) => {
+        // console.log("my name is", this.state.name)
         console.log(event.target)
+
+        this.setState(
+            {
+                name: 'chiendz',
+                age: Math.floor((Math.random() * 100) + 1)
+            }
+        )
+
     }
 
     render() {
