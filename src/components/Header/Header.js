@@ -1,3 +1,4 @@
+import { Button } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -22,6 +23,9 @@ const Header = () => {
 
                     </Nav>
                     <Nav>
+                        <Button className='btn-login'>Log in</Button>
+                        <Button className='btn-signup'>Sign up</Button>
+
                         <NavDropdown title="Settings" id="basic-nav-dropdown">
                             <NavDropdown.Item>Log in</NavDropdown.Item>
                             <NavDropdown.Item>Log out</NavDropdown.Item>
