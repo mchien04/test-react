@@ -8,6 +8,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@media (min-width: 1400px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+      max-width: 1450px !important;
+  }
+}
 
 .app-container{
   .header-container{
@@ -18,6 +23,7 @@ body {
       margin-right: 15px;
       padding: 0 15px;
       border: 1px solid #262424;
+      height: 40px;
   }
 
     .btn-signup{
@@ -26,6 +32,7 @@ body {
       margin-right: 15px;
       padding: 0 15px;
       border: 1px solid #262424;
+      height: 40px;
 
       &:hover{
         background-color: #202020;
